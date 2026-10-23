@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glucose Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <div class="logo">🩸</div>
+            <h1>Lifeline T1D</h1>
+            <p>A little more understanding, one step at a time.</p>
+            <nav class="page-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="glucose_tool.html" aria-current="page">Glucose guide</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+        </header>
+
+        <section class="tool">
+            <h2>Try the number tool</h2>
+            <p>Enter the number on your meter or monitor:</p>
+
+            <form id="numberForm">
+                <label for="numberInput">Your number</label>
+
+                <input type="number" id="numberInput" min="0" max="600" step="1" placeholder="Enter a number..."
+                    required>
+
+                <button type="submit">Enter</button>
+            </form>
+
+            <div id="result" class="result" role="status" aria-live="polite">
+                Your message will appear here.
+            </div>
+        </section>
+
+        <footer>
+            <p>Learning prototype · Example values only</p>
+        </footer>
+    </main>
+</body>
+
+</html>
