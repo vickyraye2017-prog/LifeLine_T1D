@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Lifeline T1D</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js" defer></script>
+    <script src="js/settings.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <div class="logo">🩸</div>
+            <h1>Lifeline T1D</h1>
+            <p>Make the page feel more like yours.</p>
+            <nav class="page-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="glucose_tool.html">Glucose guide</a>
+                <a href="settings.html" aria-current="page">Settings</a>
+            </nav>
+        </header>
+
+        <section class="tool" aria-labelledby="paletteHeading">
+            <h2 id="paletteHeading">Color palette</h2>
+            <p>Choose a palette. Your choice will be saved on this device.</p>
+            <div id="paletteList" class="palette-list" role="group" aria-label="Available color palettes"></div>
+            <p id="settingsStatus" class="settings-status" role="status" aria-live="polite"></p>
+        </section>
+
+        <footer>
+            <p>Learning prototype · Example values only</p>
+        </footer>
+    </main>
+</body>
+
+</html>
